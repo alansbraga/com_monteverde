@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="COM_MONTEVERDE_MONTEVERDE_VIEW_DEFAULT_TITLE">
-		<message>COM_MONTEVERDE_MONTEVERDE_VIEW_DEFAULT_DESC</message>
-	</layout>
+ <layout title="COM_MONTEVERDE_MONTEVERDE_VIEW_DEFAULT_TITLE">
+  <message>COM_MONTEVERDE_MONTEVERDE_VIEW_DEFAULT_DESC</message>
+ </layout>
+ <fields name="request">  
+     <fieldset name="request">
+        <field     name="id"     type="list"  ="COM_MOTEVERDE_MOTEVERDE_FIELD_GREETING_LABEL"  description="COM_MOTEVERDE_MOTEVERDE_FIELD_GREETING_DESC"     default="1">
+          <option value="1">Monte Verde Opção 1!</option>
+          <option value="2">Monte Verde Opção 2!</option>
+        </field>
+     </fieldset> 
+  </fields>
 </metadata>

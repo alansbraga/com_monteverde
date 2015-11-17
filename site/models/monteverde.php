@@ -31,7 +31,18 @@ class MonteVerdeModelMonteVerde extends JModelItem
 	{
 		if (!isset($this->message))
 		{
-			$this->message = 'Monte Verde!';
+        $jinput = JFactory::getApplication()->input;
+        $id     = $jinput->get('id', 1, 'INT'); 			
+        switch ($id)			
+        {				
+            case 2:
+                $this->message = 'Opção 2 selecionada!';
+                break;				
+            default:
+            case 1:
+                $this->message = 'Selecionaram a 1 ou nenhuma!';
+                break;
+        }
 		}
  
 		return $this->message;
